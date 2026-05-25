@@ -1,64 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reginald Jefferson — Full Stack Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-<!-- ─── NAV ─────────────────────────────────────────────────────── -->
-<nav>
-  <div class="inner">
-    <a href="#hero" class="nav-logo"><span>Reginald Jefferson</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="theme-btn" id="themeBtn" title="Toggle theme">🌙</button>
-      <button class="menu-btn" id="menuBtn" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</nav>
-
-<!-- ─── HERO ─────────────────────────────────────────────────────── -->
-<section id="hero">
-  <canvas id="particles-canvas"></canvas>
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-left reveal">
-        <p class="hero-eyebrow">Available for hire</p>
-        <h1 class="hero-name">
-          Hi, I'm<br><span class="highlight">Reginald Jefferson</span>
-        </h1>
-        <p class="hero-title" id="typeTarget"><span class="cursor"></span></p>
-        <p class="hero-desc">
-          I build performance-driven, accessible web applications from pixel-perfect frontends
-          to scalable backend architectures. 5+ years turning ideas into products that delight users and drive business impact.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">
-            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-            View My Work
-          </a>
-          <a href="#contact" class="btn btn-outline">Let's Talk</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reginald Jefferson — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ─── NAV ─────────────────────────────────────────────────────── -->
+    <nav>
+      <div class="inner">
+        <a href="#hero" class="nav-logo"><span>Reginald Jefferson</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="theme-btn" id="themeBtn" title="Toggle theme">
+            🌙
+          </button>
+          <button class="menu-btn" id="menuBtn" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
-      <div class="hero-visual reveal reveal-delay-2">
-        <div class="hero-code-block">
-          <div class="code-header">
-            <div class="code-dot"></div><div class="code-dot"></div><div class="code-dot"></div>
-            <span class="code-filename">portfolio.ts</span>
+    </nav>
+
+    <!-- ─── HERO ─────────────────────────────────────────────────────── -->
+    <section id="hero">
+      <canvas id="particles-canvas"></canvas>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-left reveal">
+            <p class="hero-eyebrow">Available for hire</p>
+            <h1 class="hero-name">
+              Hi, I'm<br /><span class="highlight">Reginald Jefferson</span>
+            </h1>
+            <p class="hero-title" id="typeTarget">
+              <span class="cursor"></span>
+            </p>
+            <p class="hero-desc">
+              I build performance-driven, accessible web applications from
+              pixel-perfect frontends to scalable backend architectures. 5+
+              years turning ideas into products that delight users and drive
+              business impact.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+                View My Work
+              </a>
+              <a href="#contact" class="btn btn-outline">Let's Talk</a>
+            </div>
           </div>
-<pre><code><span class="c-kw">const</span> <span class="c-fn">developer</span> = {
+          <div class="hero-visual reveal reveal-delay-2">
+            <div class="hero-code-block">
+              <div class="code-header">
+                <div class="code-dot"></div>
+                <div class="code-dot"></div>
+                <div class="code-dot"></div>
+                <span class="code-filename">portfolio.ts</span>
+              </div>
+              <pre><code><span class="c-kw">const</span> <span class="c-fn">developer</span> = {
   name: <span class="c-str">"Reginald Jefferson"</span>,
   role: <span class="c-str">"Full Stack Developer"</span>,
   stack: [<span class="c-str">"React"</span>, <span class="c-str">"Node"</span>, <span class="c-str">"Python"</span>],
@@ -70,105 +89,129 @@
     <span class="c-kw">return</span> ship(<span class="c-fn">idea</span>);
   }
 };</code></pre>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-pill">
-            <div class="val">50+</div>
-            <div class="lbl">Projects</div>
-          </div>
-          <div class="stat-pill">
-            <div class="val">5yr</div>
-            <div class="lbl">Experience</div>
-          </div>
-          <div class="stat-pill">
-            <div class="val">40</div>
-            <div class="lbl">GitHub</div>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-pill">
+                <div class="val">50+</div>
+                <div class="lbl">Projects</div>
+              </div>
+              <div class="stat-pill">
+                <div class="val">5yr</div>
+                <div class="lbl">Experience</div>
+              </div>
+              <div class="stat-pill">
+                <div class="val">40</div>
+                <div class="lbl">GitHub</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ─── ABOUT ─────────────────────────────────────────────────────── -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-photo-wrap reveal">
-        <div class="about-photo">
-          <!--
+    <!-- ─── ABOUT ─────────────────────────────────────────────────────── -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-photo-wrap reveal">
+            <div class="about-photo">
+              <!--
             REPLACE THIS: Add your profile photo:
             <img src="your-photo.jpg" alt="Alex Rivera" style="width:100%;height:100%;object-fit:cover;" />
           -->
-          <span style="font-size:5rem;">👨‍💻</span>
-          <span class="photo-placeholder-text"></span>
-        </div>
-        <div class="about-badge">📍 Nashville, TN </div>
-      </div>
-      <div class="about-content reveal reveal-delay-1">
-        <div class="section-tag">About me</div>
-        <h2 class="section-title">Building things<br>that matter</h2>
-        <p>
-Avid Web Developer, software engineer, web designer and researcher! I am open to networking and working together to build and deploy apps and web pages. I am open to work opportunities and can be reached any time! 
-        </p>
-        <p>
-           When I'm not coding, I'm contributing to open source, writing technical deep-dives,
-          or building side projects that solve real problems. Currently open to new
-          full-time and contract opportunities.
-        </p>
-        <div class="about-chips">
-          <span class="chip">🎓 Front-End and Full-Stack Web Developer Certificates</span>
-          <span class="chip">🌐 Remote-friendly</span>
-          <span class="chip">🕐 UTC-6</span>
-          <span class="chip">✅ Open to work</span>
-          <!-- <span class="chip">📝 Blog writer</span>
+              <span style="font-size: 5rem">👨‍💻</span>
+              <span class="photo-placeholder-text"></span>
+            </div>
+            <div class="about-badge">📍 Nashville, TN</div>
+          </div>
+          <div class="about-content reveal reveal-delay-1">
+            <div class="section-tag">About me</div>
+            <h2 class="section-title">Building things<br />that matter</h2>
+            <p>
+              Avid Web Developer, software engineer, web designer and
+              researcher! I am open to networking and working together to build
+              and deploy apps and web pages. I am open to work opportunities and
+              can be reached any time!
+            </p>
+            <p>
+              When I'm not coding, I'm contributing to open source, writing
+              technical deep-dives, or building side projects that solve real
+              problems. Currently open to new full-time and contract
+              opportunities.
+            </p>
+            <div class="about-chips">
+              <span class="chip"
+                >🎓 Front-End and Full-Stack Web Developer Certificates</span
+              >
+              <span class="chip">🌐 Remote-friendly</span>
+              <span class="chip">🕐 UTC-6</span>
+              <span class="chip">✅ Open to work</span>
+              <!-- <span class="chip">📝 Blog writer</span>
           <span class="chip">🎤 Conference speaker</span> -->
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ─── SKILLS ─────────────────────────────────────────────────────── -->
-<section id="skills">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-tag">Technical Skills</div>
-      <h2 class="section-title">My stack</h2>
-      <p class="section-sub">Technologies I use to build fast, reliable, and maintainable software.</p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card reveal" style="--card-accent: #7c6af5;">
-        <div class="skill-icon">⚛️</div>
-        <h3>Frontend</h3>
-        <div class="bar-wrap" data-bars='[
+    <!-- ─── SKILLS ─────────────────────────────────────────────────────── -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">Technical Skills</div>
+          <h2 class="section-title">My stack</h2>
+          <p class="section-sub">
+            Technologies I use to build fast, reliable, and maintainable
+            software.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal" style="--card-accent: #7c6af5">
+            <div class="skill-icon">⚛️</div>
+            <h3>Frontend</h3>
+            <div
+              class="bar-wrap"
+              data-bars='[
           {"label":"React / Next.js","pct":92},
           {"label":"TypeScript","pct":88},
           {"label":"CSS / Tailwind","pct":90},
           {"label":"Vue.js","pct":72}
-        ]'></div>
-        <div class="skill-tags">
-          <span class="skill-tag">React</span><span class="skill-tag">Next.js</span>
-          <span class="skill-tag">TypeScript</span><span class="skill-tag">Vue</span>
-          <span class="skill-tag">Tailwind</span><span class="skill-tag">Figma</span>
-        </div>
-      </div>
-      <div class="skill-card reveal reveal-delay-1" style="--card-accent: #4ecdc4;">
-        <div class="skill-icon">🔧</div>
-        <h3>Backend</h3>
-        <div class="bar-wrap" data-bars='[
+        ]'
+            ></div>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span
+              ><span class="skill-tag">Next.js</span>
+              <span class="skill-tag">TypeScript</span
+              ><span class="skill-tag">Vue</span>
+              <span class="skill-tag">Tailwind</span
+              ><span class="skill-tag">Figma</span>
+            </div>
+          </div>
+          <div
+            class="skill-card reveal reveal-delay-1"
+            style="--card-accent: #4ecdc4"
+          >
+            <div class="skill-icon">🔧</div>
+            <h3>Backend</h3>
+            <div
+              class="bar-wrap"
+              data-bars='[
           {"label":"Node.js / Express","pct":90},
           {"label":"Python / FastAPI","pct":82},
           {"label":"PostgreSQL","pct":86},
           {"label":"REST & GraphQL","pct":88}
-        ]'></div>
-        <div class="skill-tags">
-          <span class="skill-tag">Node.js</span><span class="skill-tag">Python</span>
-          <span class="skill-tag">FastAPI</span><span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">MongoDB</span><span class="skill-tag">Redis</span>
-        </div>
-      </div>
-      <!-- <div class="skill-card reveal reveal-delay-2" style="--card-accent: #f7c59f;">
+        ]'
+            ></div>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span
+              ><span class="skill-tag">Python</span>
+              <span class="skill-tag">FastAPI</span
+              ><span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span
+              ><span class="skill-tag">Redis</span>
+            </div>
+          </div>
+          <!-- <div class="skill-card reveal reveal-delay-2" style="--card-accent: #f7c59f;">
         <div class="skill-icon">☁️</div>
         <h3>DevOps & Cloud</h3> 
         <div class="bar-wrap" data-bars='[
@@ -183,27 +226,29 @@ Avid Web Developer, software engineer, web designer and researcher! I am open to
           <span class="skill-tag">Nginx</span><span class="skill-tag">Terraform</span>
         </div>
       </div> -->
-    </div>
-  </div>
-</section>
+        </div>
+      </div>
+    </section>
 
-<!-- ─── PROJECTS ───────────────────────────────────────────────────── -->
-<section id="projects">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-tag">Selected Work</div>
-      <h2 class="section-title">Projects</h2>
-      <p class="section-sub">A selection of things I've built. Click any card to watch a demo video.</p>
-    </div>
-    <div class="filter-tabs reveal">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="frontend">Frontend</button>
-      <button class="filter-btn" data-filter="backend">Backend</button>
-      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-    </div>
-    <div class="projects-grid" id="projectsGrid">
-
-      <!-- ─ PROJECT 1 ─────────────────────────────────────────────
+    <!-- ─── PROJECTS ───────────────────────────────────────────────────── -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">Selected Work</div>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-sub">
+            A selection of things I've built. Click any card to watch a demo
+            video.
+          </p>
+        </div>
+        <div class="filter-tabs reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- ─ PROJECT 1 ─────────────────────────────────────────────
         HOW TO ADD YOUR MP4 VIDEO:
         1. Place your .mp4 file in the same folder as index.html
         2. Set data-video="your-filename.mp4" on the outer div below
@@ -211,146 +256,227 @@ Avid Web Developer, software engineer, web designer and researcher! I am open to
         4. Uncomment the <video> tag inside .project-thumb
       ──────────────────────────────────────────────────────────── -->
 
-<!-- ─ PROJECT 1 ────────────────────────────────────────────── -->
-      <div class="project-card reveal reveal-delay-2" data-category="Full Stack"
-           data-title="the_chat_app_l"
-           data-desc="Chat with your friends and family in real time! Built with HTML, CSS, Javascript, React Vite and Node.js with Express."
-           data-video="the_chat_app_l.mp4">
-        <div class="project-thumb">
-          <video src="the_chat_app_l.mp4" muted loop preload="metadata"></video>
-          <div class="project-thumb-placeholder">
-            <span class="thumb-icon">🖥️</span>
-            <span class="thumb-label">the_chat_app_l.mp4</span>
-          </div>
-          <div class="play-overlay">
-            <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5"/><polygon points="24,19 44,30 24,41" fill="white"/></svg>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-meta">
-            <span class="project-category">Full Stack</span>
-            <div class="project-links">
-              <a href="https://github.com/reginaldmj/the_chat_app_l">⌥ GitHub</a>
-              <a href="https://the-chat-app-l.vercel.app/">↗ Live</a>
+          <!-- ─ PROJECT 1 ────────────────────────────────────────────── -->
+          <div
+            class="project-card reveal reveal-delay-2"
+            data-category="Full Stack"
+            data-title="the_chat_app_l"
+            data-desc="Chat with your friends and family in real time! Built with HTML, CSS, Javascript, React Vite and Node.js with Express."
+            data-video="the_chat_app_l.mp4"
+          >
+            <div class="project-thumb">
+              <video
+                src="the_chat_app_l.mp4"
+                muted
+                loop
+                preload="metadata"
+              ></video>
+              <div class="project-thumb-placeholder">
+                <span class="thumb-icon">🖥️</span>
+                <span class="thumb-label">the_chat_app_l.mp4</span>
+              </div>
+              <div class="play-overlay">
+                <svg viewBox="0 0 60 60" fill="none">
+                  <circle
+                    cx="30"
+                    cy="30"
+                    r="29"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                  <polygon points="24,19 44,30 24,41" fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Full Stack</span>
+                <div class="project-links">
+                  <a href="https://github.com/reginaldmj/the_chat_app_l"
+                    >⌥ GitHub</a
+                  >
+                  <a href="https://the-chat-app-l.vercel.app/">↗ Live</a>
+                </div>
+              </div>
+              <h3>the_chat_app_l</h3>
+              <p>
+                Real-time messaging application for connecting with friends and
+                family.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">Javascript with React Vite</span>
+                <span class="stack-tag">Node.js with Express</span>
+              </div>
             </div>
           </div>
-          <h3>the_chat_app_l</h3>
-          <p>Real-time messaging application for connecting with friends and family.</p>
-          <div class="project-stack">
-            <span class="stack-tag">HTML</span>
-            <span class="stack-tag">CSS</span>
-            <span class="stack-tag">Javascript with React Vite</span>
-            <span class="stack-tag">Node.js with Express</span>
-          </div>
-        </div>
-      </div>
-     <!-- ─ PROJECT 2 ────────────────────────────────────────────── -->
-      <div class="project-card reveal" data-category="Front End"
-           data-title="Audio Scrobbler Demo"
-           data-desc="Audio scrobbler that tracks music listening habits and scrobbles plays."
-           data-video="scrobblerdemo.mp4">
-        <div class="project-thumb">
-          <video src="scrobblerdemo.mp4" muted loop preload="metadata"></video>
-          <div class="project-thumb-placeholder">
-            <span class="thumb-icon">🎨</span>
-            <span class="thumb-label">Audio Scrobbler</span>
-          </div>
-          <div class="play-overlay">
-            <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5"/><polygon points="24,19 44,30 24,41" fill="white"/></svg>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-meta">
-            <span class="project-category">Front End</span>
-            <div class="project-links">
-              <a href="https://github.com/reginaldmj/scrobblerDemo">⌥ Github</a>
-              <a href="https://scrobbler-demo.vercel.app/">↗ Live</a>
+          <!-- ─ PROJECT 2 ────────────────────────────────────────────── -->
+          <div
+            class="project-card reveal"
+            data-category="Front End"
+            data-title="Audio Scrobbler Demo"
+            data-desc="Audio scrobbler that tracks music listening habits and scrobbles plays."
+            data-video="scrobblerdemo.mp4"
+          >
+            <div class="project-thumb">
+              <video
+                src="scrobblerdemo.mp4"
+                muted
+                loop
+                preload="metadata"
+              ></video>
+              <div class="project-thumb-placeholder">
+                <span class="thumb-icon">🎨</span>
+                <span class="thumb-label">Audio Scrobbler</span>
+              </div>
+              <div class="play-overlay">
+                <svg viewBox="0 0 60 60" fill="none">
+                  <circle
+                    cx="30"
+                    cy="30"
+                    r="29"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                  <polygon points="24,19 44,30 24,41" fill="white" />
+                </svg>
+              </div>
             </div>
-          </div>
-          <h3>Audio Scrobbler</h3>
-          <p>Audio scrobbler that tracks music listening habits and scrobbles plays.</p>
-          <div class="project-stack">
-            <span class="stack-tag"><HTML>HTML</HTML></span>
-            <span class="stack-tag">CSS</span>
-            <span class="stack-tag">JavaScript</span>
-            <!-- <span class="stack-tag">Storybook</span>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Front End</span>
+                <div class="project-links">
+                  <a href="https://github.com/reginaldmj/scrobblerDemo"
+                    >⌥ Github</a
+                  >
+                  <a href="https://scrobbler-demo.vercel.app/">↗ Live</a>
+                </div>
+              </div>
+              <h3>Audio Scrobbler</h3>
+              <p>
+                Audio scrobbler that tracks music listening habits and scrobbles
+                plays.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag"
+                  ><html>
+                    HTML
+                  </html></span
+                >
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">JavaScript</span>
+                <!-- <span class="stack-tag">Storybook</span>
             <span class="stack-tag">CSS Modules</span> -->
-          </div>
-        </div>
-      </div>
-
-      
-     <!-- ─ PROJECT 3 ────────────────────────────────────────────── -->
-       <div class="project-card reveal reveal-delay-2" data-category="Full Stack"
-           data-title="_the_social"
-           data-desc="Full stack social mock up platform connecting locals for community engagement."
-           data-video="social.mp4">
-        <div class="project-thumb">
-          <video src="social.mp4" muted loop preload="metadata"></video>
-          <div class="project-thumb-placeholder">
-            <span class="thumb-icon">🛒</span>
-            <span class="thumb-label">_the_social</span>
-          </div>
-          <div class="play-overlay">
-            <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5"/><polygon points="24,19 44,30 24,41" fill="white"/></svg>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-meta">
-            <span class="project-category">Full Stack</span>
-            <div class="project-links">
-              <a href="">⌥ GitHub</a>
-              <a href="#">↗ Live</a>
+              </div>
             </div>
           </div>
-          <h3>_the_social</h3>
-          <p>Social Media for you! Built in a modern tech stack.</p>
-          <div class="project-stack">
-            <span class="stack-tag">HTML</span>
-            <span class="stack-tag">CSS</span>
-            <span class="stack-tag">React</span>
-            <span class="stack-tag">Node.js</span>
-            <span class="stack-tag"></span>
+
+          <!-- ─ PROJECT 3 ────────────────────────────────────────────── -->
+          <div
+            class="project-card reveal reveal-delay-2"
+            data-category="Full Stack"
+            data-title="_the_social"
+            data-desc="Full stack social mock up platform connecting locals for community engagement."
+            data-video="social.mp4"
+          >
+            <div class="project-thumb">
+              <video src="social.mp4" muted loop preload="metadata"></video>
+              <div class="project-thumb-placeholder">
+                <span class="thumb-icon">🛒</span>
+                <span class="thumb-label">_the_social</span>
+              </div>
+              <div class="play-overlay">
+                <svg viewBox="0 0 60 60" fill="none">
+                  <circle
+                    cx="30"
+                    cy="30"
+                    r="29"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                  <polygon points="24,19 44,30 24,41" fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Full Stack</span>
+                <div class="project-links">
+                  <a href="">⌥ GitHub</a>
+                  <a href="#">↗ Live</a>
+                </div>
+              </div>
+              <h3>_the_social</h3>
+              <p>Social Media for you! Built in a modern tech stack.</p>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag"></span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>      
-      <!-- ─ PROJECT 4 ────────────────────────────────────────────── -->
-      <div class="project-card reveal reveal-delay-1" data-category="Full Stack"
-           data-title="3D Portfolio"
-           data-desc="hopStore is a lightweight e-commerce demo combining a static frontend shell with a Node/Express backend API.
+          <!-- ─ PROJECT 4 ────────────────────────────────────────────── -->
+          <div
+            class="project-card reveal reveal-delay-1"
+            data-category="Full Stack"
+            data-title="3D Portfolio"
+            data-desc="hopStore is a lightweight e-commerce demo combining a static frontend shell with a Node/Express backend API.
             ."
-           data-video="ShopStoreDemo.mp4">
-        <div class="project-thumb">
-          <video src="ShopStoreDemo.mp4" muted loop preload="metadata"></video>
-          <div class="project-thumb-placeholder">
-            <span class="thumb-icon">🌐</span>
-            <span class="thumb-label">ShopStoreDemo.mp4</span>
-          </div>
-          <div class="play-overlay">
-            <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5"/><polygon points="24,19 44,30 24,41" fill="white"/></svg>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-meta">
-            <span class="project-category">Full Stack</span>
-            <div class="project-links">
-              <a href="https://github.com/reginaldmj/shopstoredemo">⌥ GitHub</a>
-              <a href="https://shopstoredemo.netlify.app/">↗ Live</a>
+            data-video="ShopStoreDemo.mp4"
+          >
+            <div class="project-thumb">
+              <video
+                src="ShopStoreDemo.mp4"
+                muted
+                loop
+                preload="metadata"
+              ></video>
+              <div class="project-thumb-placeholder">
+                <span class="thumb-icon">🌐</span>
+                <span class="thumb-label">ShopStoreDemo.mp4</span>
+              </div>
+              <div class="play-overlay">
+                <svg viewBox="0 0 60 60" fill="none">
+                  <circle
+                    cx="30"
+                    cy="30"
+                    r="29"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                  <polygon points="24,19 44,30 24,41" fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Full Stack</span>
+                <div class="project-links">
+                  <a href="https://github.com/reginaldmj/shopstoredemo"
+                    >⌥ GitHub</a
+                  >
+                  <a href="https://shopstoredemo.netlify.app/">↗ Live</a>
+                </div>
+              </div>
+              <h3>Shop Store</h3>
+              <p>
+                Custom storefront demo built using HTML, CSS, JavaScript and
+                MongoDB.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">JavaScript</span>
+                <span class="stack-tag">MongoDB</span>
+              </div>
             </div>
           </div>
-          <h3>Shop Store</h3>
-          <p>Custom storefront demo built using HTML, CSS, JavaScript and MongoDB.</p>
-          <div class="project-stack">
-            <span class="stack-tag">HTML</span>
-            <span class="stack-tag">CSS</span>
-            <span class="stack-tag">JavaScript</span>
-            <span class="stack-tag">MongoDB</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- ─ PROJECT 4 ────────────────────────────────────────────── -->
-       <!-- <div class="project-card reveal reveal-delay-2" data-category="fullstack"
+          <!-- ─ PROJECT 4 ────────────────────────────────────────────── -->
+          <!-- <div class="project-card reveal reveal-delay-2" data-category="fullstack"
            data-title="_the_social"
            data-desc="Full stack social mock up platform connecting locals for community engagement."
            data-video="_the_social">
@@ -384,80 +510,116 @@ Avid Web Developer, software engineer, web designer and researcher! I am open to
         </div>
       </div> -->
 
-      <!-- ─ PROJECT 5 ────────────────────────────────────────────── -->
-      <div class="project-card reveal" data-category="Full Stack"
-           data-title="Tickets"
-           data-desc="A ticket-based bug tracking application for managing and resolving issues across projects. Built with HTML, CSS, and Python."
-           data-video="Tickets.mp4">
-        <div class="project-thumb">
-          <div class="project-thumb-placeholder">
-            <span class="thumb-icon">🐛</span>
-            <span class="thumb-label">Tickets</span>
-          </div>
-          <video src="Tickets.mp4" muted loop preload="metadata"></video>
-          <div class="play-overlay">
-            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5"/>
-              <polygon points="24,19 44,30 24,41" fill="white"/>
-            </svg>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-meta">
-            <span class="project-category">Full Stack</span>
-            <div class="project-links">
-              <a href="https://github.com/reginaldmj/ticketing" title="GitHub">⌥ GitHub</a>
-              <a href="https://ticketing-pis7.onrender.com/" title="Live Demo">↗ Live</a>
+          <!-- ─ PROJECT 5 ────────────────────────────────────────────── -->
+          <div
+            class="project-card reveal"
+            data-category="Full Stack"
+            data-title="Tickets"
+            data-desc="A ticket-based bug tracking application for managing and resolving issues across projects. Built with HTML, CSS, and Python."
+            data-video="Tickets.mp4"
+          >
+            <div class="project-thumb">
+              <div class="project-thumb-placeholder">
+                <span class="thumb-icon">🐛</span>
+                <span class="thumb-label">Tickets</span>
+              </div>
+              <video src="Tickets.mp4" muted loop preload="metadata"></video>
+              <div class="play-overlay">
+                <svg
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="30"
+                    cy="30"
+                    r="29"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                  <polygon points="24,19 44,30 24,41" fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Full Stack</span>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/reginaldmj/ticketing"
+                    title="GitHub"
+                    >⌥ GitHub</a
+                  >
+                  <a
+                    href="https://ticketing-pis7.onrender.com/"
+                    title="Live Demo"
+                    >↗ Live</a
+                  >
+                </div>
+              </div>
+              <h3>Tickets</h3>
+              <p>
+                Ticket system bug tracker for managing and resolving issues
+                across projects.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">Django</span>
+                <span class="stack-tag">SQLite</span>
+              </div>
             </div>
           </div>
-          <h3>Tickets</h3>
-          <p>Ticket system bug tracker for managing and resolving issues across projects.</p>
-          <div class="project-stack">
-            <span class="stack-tag">HTML</span>
-            <span class="stack-tag">CSS</span>
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">Django</span>
-            <span class="stack-tag">SQLite</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- ─ PROJECT 6 ────────────────────────────────────────────── -->
-      <div class="project-card reveal reveal-delay-1" data-category="Front End"
-           data-title="Event Planning"
-           data-desc="Results-driven event planning with measurable outcomes and scalable solutions. Built using HTML, CSS and Javascript"
-           data-video="decoration.mp4">
-        <div class="project-thumb">
-           <video src="decoration.mp4" muted loop preload="metadata"></video>
-          <div class="project-thumb-placeholder">
-            <span class="thumb-icon">⚡</span>
-            <span class="thumb-label">decoration.mp4</span>
-          </div>
-          <div class="play-overlay">
-            <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5"/><polygon points="24,19 44,30 24,41" fill="white"/></svg>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-meta">
-            <span class="project-category">Frontend</span>
-            <div class="project-links">
-              <a href="https://github.com/reginaldmj/decorate">⌥ GitHub </a>
-              <a href="https://event-planning-murex.vercel.app/">↗ Live</a>
+          <!-- ─ PROJECT 6 ────────────────────────────────────────────── -->
+          <div
+            class="project-card reveal reveal-delay-1"
+            data-category="Front End"
+            data-title="Event Planning"
+            data-desc="Results-driven event planning with measurable outcomes and scalable solutions. Built using HTML, CSS and Javascript"
+            data-video="decoration.mp4"
+          >
+            <div class="project-thumb">
+              <video src="decoration.mp4" muted loop preload="metadata"></video>
+              <div class="project-thumb-placeholder">
+                <span class="thumb-icon">⚡</span>
+                <span class="thumb-label">decoration.mp4</span>
+              </div>
+              <div class="play-overlay">
+                <svg viewBox="0 0 60 60" fill="none">
+                  <circle
+                    cx="30"
+                    cy="30"
+                    r="29"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                  <polygon points="24,19 44,30 24,41" fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Frontend</span>
+                <div class="project-links">
+                  <a href="https://github.com/reginaldmj/decorate">⌥ GitHub </a>
+                  <a href="https://event-planning-murex.vercel.app/">↗ Live</a>
+                </div>
+              </div>
+              <h3>Event Planning</h3>
+              <p>Event planning, scheduling, and coordination application.</p>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">Javascript</span>
+                <!-- <span class="stack-tag">PostgreSQL</span> -->
+              </div>
             </div>
           </div>
-          <h3>Event Planning</h3>
-          <p>Event planning, scheduling, and coordination application.</p>
-          <div class="project-stack">
-            <span class="stack-tag">HTML</span>
-            <span class="stack-tag">CSS</span>
-            <span class="stack-tag">Javascript</span>
-            <!-- <span class="stack-tag">PostgreSQL</span> -->
-          </div>
-        </div>
-      </div>
 
-      <!-- ─ PROJECT 6 ────────────────────────────────────────────── -->
-      <!-- <div class="project-card reveal reveal-delay-2" data-category="Full Stack"
+          <!-- ─ PROJECT 6 ────────────────────────────────────────────── -->
+          <!-- <div class="project-card reveal reveal-delay-2" data-category="Full Stack"
            data-title="chat"
            data-desc="Chat with your friends and family in real time! Built with HTML, CSS, Javascript."
            data-video="the_chat_app_l.mp4">
@@ -490,214 +652,350 @@ Avid Web Developer, software engineer, web designer and researcher! I am open to
           </div>
         </div>
       </div> -->
-
-    </div><!-- /projects-grid -->
-  </div>
-</section>
-
-<!-- ─── VIDEO MODAL ───────────────────────────────────────────────── -->
-<div class="modal-backdrop" id="videoModal" role="dialog" aria-modal="true">
-  <div class="modal-inner">
-    <div class="modal-header">
-      <span class="modal-title" id="modalTitle">Project Demo</span>
-      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
-    </div>
-    <div class="modal-video" id="modalVideoWrap"></div>
-    <div class="modal-footer">
-      <p class="modal-desc" id="modalDesc"></p>
-      <div class="modal-actions" id="modalActions"></div>
-    </div>
-  </div>
-</div>
-
-<!-- ─── RESUME ─────────────────────────────────────────────────────── -->
-<section id="resume">
-  <div class="container">
-    <div class="section-head reveal" style="text-align:center;max-width:620px;margin:0 auto 56px;">
-      <div class="section-tag">Resume</div>
-      <h2 class="section-title">My Resume</h2>
-      <p class="section-sub" style="margin:0 auto;">
-        View a quick preview below or download the full PDF.
-      </p>
-    </div>
-
-    <div class="resume-shell reveal reveal-delay-1">
-      <div class="resume-actions">
-        <a class="btn btn-primary" href="https://www.dropbox.com/scl/fi/1jf6kbexiqco0me0cuwoy/Reginald-Jefferson-Developer-PDF.pdf?rlkey=511hma4ix421gn7dkfxudd6da&st=dthlll6i&dl=1" target="_blank" rel="noopener">
-          Download My Resume (PDF)
-        </a>
+        </div>
+        <!-- /projects-grid -->
       </div>
-      <div class="resume-frame-wrap">
-        <iframe src="https://www.dropbox.com/scl/fi/1jf6kbexiqco0me0cuwoy/Reginald-Jefferson-Developer-PDF.pdf?rlkey=511hma4ix421gn7dkfxudd6da&st=dthlll6i&raw=1" title="Resume PDF" loading="lazy"></iframe>
+    </section>
+
+    <!-- ─── VIDEO MODAL ───────────────────────────────────────────────── -->
+    <div class="modal-backdrop" id="videoModal" role="dialog" aria-modal="true">
+      <div class="modal-inner">
+        <div class="modal-header">
+          <span class="modal-title" id="modalTitle">Project Demo</span>
+          <button class="modal-close" id="modalClose" aria-label="Close">
+            ✕
+          </button>
+        </div>
+        <div class="modal-video" id="modalVideoWrap"></div>
+        <div class="modal-footer">
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-actions" id="modalActions"></div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ─── CERTIFICATIONS ─────────────────────────────────────────────────────── -->
-<section id="certifications">
-  <div class="container">
-    <div class="section-head reveal" style="text-align:center;max-width:620px;margin:0 auto 56px;">
-      <div class="section-tag">Certifications</div>
-      <h2 class="section-title">Professional Certificates</h2>
-      <p class="section-sub" style="margin:0 auto;">
-        Verified training across frontend, full stack, Linux, networking, tech support, and security fundamentals.
-      </p>
-    </div>
-
-    <div class="cert-grid">
-      <article class="cert-card reveal">
-        <a class="cert-media" href="https://www.dropbox.com/scl/fi/j8gbor6syo8mxlxtxo0za/FrontEnd.jpg?rlkey=mfgd06f51xn58j8jfcgehd7xv&st=oibggz1e&dl=1" target="_blank" rel="noopener">
-          <img src="https://www.dropbox.com/scl/fi/j8gbor6syo8mxlxtxo0za/FrontEnd.jpg?rlkey=mfgd06f51xn58j8jfcgehd7xv&st=oibggz1e&raw=1" alt="Front-end web development certificate" loading="lazy" />
-        </a>
-        <div class="cert-body">
-          <h3>Front-End Certificate</h3>
-          <p>Covers modern HTML, CSS, responsive design, and JavaScript fundamentals.</p>
+    <!-- ─── RESUME ─────────────────────────────────────────────────────── -->
+    <section id="resume">
+      <div class="container">
+        <div
+          class="section-head reveal"
+          style="text-align: center; max-width: 620px; margin: 0 auto 56px"
+        >
+          <div class="section-tag">Resume</div>
+          <h2 class="section-title">My Resume</h2>
+          <p class="section-sub" style="margin: 0 auto">
+            View a quick preview below or download the full PDF.
+          </p>
         </div>
-      </article>
 
-      <article class="cert-card reveal reveal-delay-1">
-        <a class="cert-media" href="https://www.dropbox.com/scl/fi/7zcxc5kcsxldxnkcsq0ug/Fullstack.jpg?rlkey=19a05a4ml5h2ay0y56l37v0s1&st=pz9feud8&dl=1" target="_blank" rel="noopener">
-          <img src="https://www.dropbox.com/scl/fi/7zcxc5kcsxldxnkcsq0ug/Fullstack.jpg?rlkey=19a05a4ml5h2ay0y56l37v0s1&st=pz9feud8&raw=1" alt="Full-stack web development certificate" loading="lazy" />
-        </a>
-        <div class="cert-body">
-          <h3>Full-Stack Certificate</h3>
-          <p>Focuses on frontend-backend integration, APIs, databases, and deployment workflows.</p>
+        <div class="resume-shell reveal reveal-delay-1">
+          <div class="resume-actions">
+            <a
+              class="btn btn-primary"
+              href="https://www.dropbox.com/scl/fi/i5ofpf5rreyhcb0d9s4az/Reginald-Jefferson-Resume-PDF.pdf?rlkey=n27ar2cjf9waqsvr4i6a9g2av&st=8pfuctn7&dl=0"
+              target="_blank"
+              rel="noopener"
+            >
+              Download My Resume (PDF)
+            </a>
+          </div>
+          <div class="resume-frame-wrap">
+            <iframe
+              src="https://www.dropbox.com/scl/fi/i5ofpf5rreyhcb0d9s4az/Reginald-Jefferson-Resume-PDF.pdf?rlkey=n27ar2cjf9waqsvr4i6a9g2av&raw=1"
+              width="100%"
+              height="800"
+            ></iframe>
+          </div>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="cert-card reveal reveal-delay-2">
-        <a class="cert-media" href="https://www.dropbox.com/scl/fi/pl65ek2e1hcllo35l2wpc/linux.jpg?rlkey=27qgmjwv5tz7p6ej3orsmhq0c&st=s5ei6w8z&dl=1" target="_blank" rel="noopener">
-          <img src="https://www.dropbox.com/scl/fi/pl65ek2e1hcllo35l2wpc/linux.jpg?rlkey=27qgmjwv5tz7p6ej3orsmhq0c&st=s5ei6w8z&raw=1" alt="Linux systems certificate" loading="lazy" />
-        </a>
-        <div class="cert-body">
-          <h3>Linux Certificate</h3>
-          <p>Demonstrates core command-line skills, shell usage, and Linux environment management.</p>
+    <!-- ─── CERTIFICATIONS ─────────────────────────────────────────────────────── -->
+    <section id="certifications">
+      <div class="container">
+        <div
+          class="section-head reveal"
+          style="text-align: center; max-width: 620px; margin: 0 auto 56px"
+        >
+          <div class="section-tag">Certifications</div>
+          <h2 class="section-title">Professional Certificates</h2>
+          <p class="section-sub" style="margin: 0 auto">
+            Verified training across frontend, full stack, Linux, networking,
+            tech support, and security fundamentals.
+          </p>
         </div>
-      </article>
 
-      <article class="cert-card reveal reveal-delay-2">
-        <a class="cert-media" href="https://www.dropbox.com/scl/fi/6wfc7ifophvx4dvlm3b9v/Computer-Networing-Certificate-1.jpg?rlkey=k13p7kd4qm5csmgbiqh7k8enj&st=sg1vganw&dl=1" target="_blank" rel="noopener">
-          <img src="https://www.dropbox.com/scl/fi/6wfc7ifophvx4dvlm3b9v/Computer-Networing-Certificate-1.jpg?rlkey=k13p7kd4qm5csmgbiqh7k8enj&st=sg1vganw&raw=1" alt="Computer Networking Certificate" loading="lazy" />
-        </a>
-        <div class="cert-body">
-          <h3>Computer Networking Certificate</h3>
-          <p>Demonstrates knowledge of network protocols, architectures, and security practices.</p>
-        </div>
-      </article>
-
-      <article class="cert-card reveal reveal-delay-2">
-        <a class="cert-media" href="https://www.dropbox.com/scl/fi/8a8icobjjcjpwqijvs9zj/Tech-Support-Certificate-1.jpg?rlkey=tlh0v5rtxmwxirw7wiga1j3qs&st=h2aj57tn&dl=1" target="_blank" rel="noopener">
-          <img src="https://www.dropbox.com/scl/fi/8a8icobjjcjpwqijvs9zj/Tech-Support-Certificate-1.jpg?rlkey=tlh0v5rtxmwxirw7wiga1j3qs&st=h2aj57tn&raw=1" alt="Tech Support Certificate" loading="lazy" />
-        </a>
-        <div class="cert-body">
-          <h3>Tech Support Certificate</h3>
-          <p>Demonstrates proficiency in troubleshooting, user support, and technical problem-solving.</p>
-        </div>
-      </article>
-
-      <article class="cert-card reveal reveal-delay-2">
-        <a class="cert-media" href="https://www.dropbox.com/scl/fi/am9i9wkyh7fm0gytfpwhd/Play-It-Safe-Manage-Security-Risks-Certificate-1.jpg?rlkey=b1s4n531njfmlgwzlpiq1bzys&st=k9c9wxis&dl=1" target="_blank" rel="noopener">
-          <img src="https://www.dropbox.com/scl/fi/am9i9wkyh7fm0gytfpwhd/Play-It-Safe-Manage-Security-Risks-Certificate-1.jpg?rlkey=b1s4n531njfmlgwzlpiq1bzys&st=k9c9wxis&raw=1" alt="Play It Safe: Manage Security Risks Certificate" loading="lazy" />
-        </a>
-        <div class="cert-body">
-          <h3>Play It Safe: Manage Security Risks Certificate</h3>
-          <p>Demonstrates knowledge of security risks and best practices for managing them.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- ─── CONTACT ───────────────────────────────────────────────────── -->
-<section id="contact">
-  <div class="container">
-    <div class="section-head reveal" style="text-align:center;max-width:560px;margin:0 auto 56px;">
-      <div class="section-tag">Contact</div>
-      <h2 class="section-title">Let's build something</h2>
-      <p class="section-sub" style="margin:0 auto;">
-        Open to full-time roles, contracts, and interesting collaborations.
-        Drop me a message and I'll get back within 24 hours.
-      </p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info reveal">
-        <h3>Get in touch</h3>
-        <p>Whether you have a project in mind, want to discuss opportunities,
-           or just want to say hi — my inbox is always open.</p>
-        <div class="contact-links">
-          <a class="contact-link" href="mailto:alex@example.com">
-            <span class="contact-link-icon">✉️</span>
-            <div>
-              <div class="contact-link-text">reginald.jeffersonm@outlook.com</div>
-              <div class="contact-link-label">Email</div>
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <a
+              class="cert-media"
+              href="https://www.dropbox.com/scl/fi/j8gbor6syo8mxlxtxo0za/FrontEnd.jpg?rlkey=mfgd06f51xn58j8jfcgehd7xv&st=oibggz1e&dl=1"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://www.dropbox.com/scl/fi/j8gbor6syo8mxlxtxo0za/FrontEnd.jpg?rlkey=mfgd06f51xn58j8jfcgehd7xv&st=oibggz1e&raw=1"
+                alt="Front-end web development certificate"
+                loading="lazy"
+              />
+            </a>
+            <div class="cert-body">
+              <h3>Front-End Certificate</h3>
+              <p>
+                Covers modern HTML, CSS, responsive design, and JavaScript
+                fundamentals.
+              </p>
             </div>
-          </a>
-          <a class="contact-link" href="https://github.com/" target="_blank" rel="noopener">
-            <span class="contact-link-icon">⌥</span>
-            <div>
-              <div class="contact-link-text">github.com/reginaldmj</div>
-              <div class="contact-link-label">GitHub</div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-1">
+            <a
+              class="cert-media"
+              href="https://www.dropbox.com/scl/fi/7zcxc5kcsxldxnkcsq0ug/Fullstack.jpg?rlkey=19a05a4ml5h2ay0y56l37v0s1&st=pz9feud8&dl=1"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://www.dropbox.com/scl/fi/7zcxc5kcsxldxnkcsq0ug/Fullstack.jpg?rlkey=19a05a4ml5h2ay0y56l37v0s1&st=pz9feud8&raw=1"
+                alt="Full-stack web development certificate"
+                loading="lazy"
+              />
+            </a>
+            <div class="cert-body">
+              <h3>Full-Stack Certificate</h3>
+              <p>
+                Focuses on frontend-backend integration, APIs, databases, and
+                deployment workflows.
+              </p>
             </div>
-          </a>
-          <a class="contact-link" href="https://linkedin.com/" target="_blank" rel="noopener">
-            <span class="contact-link-icon">💼</span>
-            <div>
-              <div class="contact-link-text">https://www.linkedin.com/in/reginald-jefferson-42b0b61a8/</div>
-              <div class="contact-link-label">LinkedIn</div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-2">
+            <a
+              class="cert-media"
+              href="https://www.dropbox.com/scl/fi/pl65ek2e1hcllo35l2wpc/linux.jpg?rlkey=27qgmjwv5tz7p6ej3orsmhq0c&st=s5ei6w8z&dl=1"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://www.dropbox.com/scl/fi/pl65ek2e1hcllo35l2wpc/linux.jpg?rlkey=27qgmjwv5tz7p6ej3orsmhq0c&st=s5ei6w8z&raw=1"
+                alt="Linux systems certificate"
+                loading="lazy"
+              />
+            </a>
+            <div class="cert-body">
+              <h3>Linux Certificate</h3>
+              <p>
+                Demonstrates core command-line skills, shell usage, and Linux
+                environment management.
+              </p>
             </div>
-          </a>
-          <a class="contact-link" href="https://twitter.com/" target="_blank" rel="noopener">
-            <span class="contact-link-icon">𝕏</span>
-            <div>
-              <!-- <div class="contact-link-text">@alexrivera_dev</div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-2">
+            <a
+              class="cert-media"
+              href="https://www.dropbox.com/scl/fi/6wfc7ifophvx4dvlm3b9v/Computer-Networing-Certificate-1.jpg?rlkey=k13p7kd4qm5csmgbiqh7k8enj&st=sg1vganw&dl=1"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://www.dropbox.com/scl/fi/6wfc7ifophvx4dvlm3b9v/Computer-Networing-Certificate-1.jpg?rlkey=k13p7kd4qm5csmgbiqh7k8enj&st=sg1vganw&raw=1"
+                alt="Computer Networking Certificate"
+                loading="lazy"
+              />
+            </a>
+            <div class="cert-body">
+              <h3>Computer Networking Certificate</h3>
+              <p>
+                Demonstrates knowledge of network protocols, architectures, and
+                security practices.
+              </p>
+            </div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-2">
+            <a
+              class="cert-media"
+              href="https://www.dropbox.com/scl/fi/8a8icobjjcjpwqijvs9zj/Tech-Support-Certificate-1.jpg?rlkey=tlh0v5rtxmwxirw7wiga1j3qs&st=h2aj57tn&dl=1"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://www.dropbox.com/scl/fi/8a8icobjjcjpwqijvs9zj/Tech-Support-Certificate-1.jpg?rlkey=tlh0v5rtxmwxirw7wiga1j3qs&st=h2aj57tn&raw=1"
+                alt="Tech Support Certificate"
+                loading="lazy"
+              />
+            </a>
+            <div class="cert-body">
+              <h3>Tech Support Certificate</h3>
+              <p>
+                Demonstrates proficiency in troubleshooting, user support, and
+                technical problem-solving.
+              </p>
+            </div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-2">
+            <a
+              class="cert-media"
+              href="https://www.dropbox.com/scl/fi/am9i9wkyh7fm0gytfpwhd/Play-It-Safe-Manage-Security-Risks-Certificate-1.jpg?rlkey=b1s4n531njfmlgwzlpiq1bzys&st=k9c9wxis&dl=1"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://www.dropbox.com/scl/fi/am9i9wkyh7fm0gytfpwhd/Play-It-Safe-Manage-Security-Risks-Certificate-1.jpg?rlkey=b1s4n531njfmlgwzlpiq1bzys&st=k9c9wxis&raw=1"
+                alt="Play It Safe: Manage Security Risks Certificate"
+                loading="lazy"
+              />
+            </a>
+            <div class="cert-body">
+              <h3>Play It Safe: Manage Security Risks Certificate</h3>
+              <p>
+                Demonstrates knowledge of security risks and best practices for
+                managing them.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ───────────────────────────────────────────────────── -->
+    <section id="contact">
+      <div class="container">
+        <div
+          class="section-head reveal"
+          style="text-align: center; max-width: 560px; margin: 0 auto 56px"
+        >
+          <div class="section-tag">Contact</div>
+          <h2 class="section-title">Let's build something</h2>
+          <p class="section-sub" style="margin: 0 auto">
+            Open to full-time roles, contracts, and interesting collaborations.
+            Drop me a message and I'll get back within 24 hours.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Get in touch</h3>
+            <p>
+              Whether you have a project in mind, want to discuss opportunities,
+              or just want to say hi — my inbox is always open.
+            </p>
+            <div class="contact-links">
+              <a class="contact-link" href="mailto:alex@example.com">
+                <span class="contact-link-icon">✉️</span>
+                <div>
+                  <div class="contact-link-text">
+                    reginald.jeffersonm@outlook.com
+                  </div>
+                  <div class="contact-link-label">Email</div>
+                </div>
+              </a>
+              <a
+                class="contact-link"
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="contact-link-icon">⌥</span>
+                <div>
+                  <div class="contact-link-text">github.com/reginaldmj</div>
+                  <div class="contact-link-label">GitHub</div>
+                </div>
+              </a>
+              <a
+                class="contact-link"
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="contact-link-icon">💼</span>
+                <div>
+                  <div class="contact-link-text">
+                    https://www.linkedin.com/in/reginald-jefferson-42b0b61a8/
+                  </div>
+                  <div class="contact-link-label">LinkedIn</div>
+                </div>
+              </a>
+              <a
+                class="contact-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="contact-link-icon">𝕏</span>
+                <div>
+                  <!-- <div class="contact-link-text">@alexrivera_dev</div>
               <div class="contact-link-label">Twitter / X</div> -->
+                </div>
+              </a>
             </div>
-          </a>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Jane Smith"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="jane@example.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="Project idea / Job opportunity"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message →</button>
+            </form>
+            <div class="form-success" id="formSuccess">
+              <p style="font-size: 2rem; margin-bottom: 12px">✅</p>
+              <p style="font-weight: 700; margin-bottom: 6px">Message sent!</p>
+              <p style="color: var(--muted); font-size: 0.85rem">
+                I'll get back to you within 24 hours.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="reveal reveal-delay-1">
-        <form class="contact-form" id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Jane Smith" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="jane@example.com" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" placeholder="Project idea / Job opportunity" />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Send Message →</button>
-        </form>
-        <div class="form-success" id="formSuccess">
-          <p style="font-size:2rem;margin-bottom:12px;">✅</p>
-          <p style="font-weight:700;margin-bottom:6px;">Message sent!</p>
-          <p style="color:var(--muted);font-size:0.85rem;">I'll get back to you within 24 hours.</p>
-        </div>
+    </section>
+
+    <!-- ─── FOOTER ────────────────────────────────────────────────────── -->
+    <footer>
+      <div class="container">
+        <p>
+          Designed &amp; built by <a href="#hero">Reginald Jefferson</a> ·
+          &copy; <span id="year"></span>
+        </p>
+        <a href="#hero" class="back-top">↑ Back to top</a>
       </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<!-- ─── FOOTER ────────────────────────────────────────────────────── -->
-<footer>
-  <div class="container">
-    <p>Designed &amp; built by <a href="#hero">Reginald Jefferson</a> · &copy; <span id="year"></span></p>
-    <a href="#hero" class="back-top">↑ Back to top</a>
-  </div>
-</footer>
-
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
